@@ -1,0 +1,74 @@
+@import "index.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+
+.section{
+    background-color: rgb(255, 255, 255);
+    padding-top: 11pc;
+    
+    
+}
+.form-section {
+    max-width: 700px;
+    margin: 3px;
+    margin-top: 3rem;
+    text-align: center;
+    min-height: 60vh;
+}
+.form-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+.form-group label {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #111010;
+}
+.form-group input[type="number"], select , .form-group textarea {
+    /* padding: 0.5rem;
+    border: none;
+    /* border-bottom: 4px solid #110e0e; */
+    /* font-size: 1.2rem;
+    color: #222; */ 
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px o;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-boxs;
+
+}
+.form-group input[type="submit"] {
+    background-color: #3cc741;
+    color: white;
+    margin: 8px o;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-boxs;
+    font-size: 4.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #2E8B57;
+}
+.form-group textarea {
+    resize: none;
+    height: 150px;
+}
+.form-section.result{
+    width: 50%;
+    margin-left: 20rem;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+@import "index.css";
