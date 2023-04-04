@@ -1,8 +1,6 @@
 from logging import exception
 from flask import Flask,render_template,url_for,request,redirect,session,send_file
 
-import jsonify
-import requests
 import pickle
 import numpy as np
 import sklearn
@@ -27,7 +25,7 @@ def project():
 
 @app.route("/download",methods = ["post","get"])
 def download():
-    path = "documents\jibran_resume.pdf"
+    path = "jibran_resume.pdf"
     return send_file(path, as_attachment=True)
 
 
@@ -87,7 +85,8 @@ def car():
     # except:
     #     return render_template("404.html")
     
-    
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port = 5000) 
+# if __name__ == '__main__':
+#     app.run(debug=True,host = "0.0.0.0")
     
